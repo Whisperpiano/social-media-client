@@ -4,6 +4,10 @@ import localStorageMock from '../mocks/localStorage.mock.js'
 global.localStorage = localStorageMock
 
 describe('localStorage.setItem()', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('should save an item to localStorage', () => {
     const key = 'testKey'
     const value = 'testValue'
@@ -62,6 +66,10 @@ describe('localStorage.setItem()', () => {
 })
 
 describe('localStorage.getItem()', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('should load a valid string from localStorage', () => {
     const key = 'testKey'
     const value = 'testValue'
@@ -101,6 +109,10 @@ describe('localStorage.getItem()', () => {
 })
 
 describe('localStorage.remove()', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('should remove an item from localStorage', () => {
     const key = 'testKey'
     const value = 'testValue'
