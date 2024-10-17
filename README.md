@@ -46,8 +46,6 @@ All the work for this assignment is contained within the `workflow` branch. Duri
    - Configured the existing GitHub Action (inherited from the `master` branch) to ensure that deployments are correctly triggered for the appropriate branch.
    - The workflow is triggered on every push to the `workflow` branch, ensuring continuous integration and deployment.
 
-   Testing actions
-
 
 
 
