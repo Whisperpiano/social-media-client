@@ -46,6 +46,15 @@ All the work for this assignment is contained within the `workflow` branch. Duri
    - Configured the existing GitHub Action (inherited from the `master` branch) to ensure that deployments are correctly triggered for the appropriate branch.
    - The workflow is triggered on every push to the `workflow` branch, ensuring continuous integration and deployment.
 
+### 7. **Environment Variables Setup with `dotenv`**
+   - Installed `dotenv` to manage environment variables for sensitive data, such as user credentials.
+   - In Cypress, the environment variable `TEST_USER_PASSWORD` is loaded and used for testing user login functionality.
+   - To ensure security, the `.env` file is excluded from version control using `.gitignore`.
+   - Added the `TEST_USER_PASSWORD` as a secret in the GitHub repository's **Secrets** settings to allow GitHub Actions to access it securely.
+   - The secret is used in the GitHub Actions workflow during the Cypress tests, ensuring that sensitive data is not exposed in the codebase.
+
+
+
 
 
 
