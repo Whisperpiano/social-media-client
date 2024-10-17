@@ -31,7 +31,7 @@ describe('Login', () => {
     cy.isNotLoggedIn()
   })
 
-  it.only('shows an error message when the user enters an invalid email or password', () => {
+  it('shows an error message when the user enters an invalid email or password', () => {
     cy.intercept(
       'POST',
       'https://nf-api.onrender.com/api/v1/social/auth/login',

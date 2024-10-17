@@ -4,9 +4,10 @@
   "description": "Test",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-unit",
+    "test": "npm run test-unit && nnpm run test-e2e",
     "test-unit": "jest",
     "test-e2e": "cypress open",
+    "test-e2e-cli": "cypress run",
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "format": "prettier --write **/*.js",
@@ -16,7 +17,7 @@
   },
   "keywords": [],
   "author": "Noroff",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.25.8",
     "@babel/preset-env": "^7.25.8",
