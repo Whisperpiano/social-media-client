@@ -49,7 +49,7 @@ Cypress.Commands.add('login', (email, password) => {
 
 Cypress.Commands.add('loginWithTestUser', () => {
   cy.fixture('userTest').then((user) => {
-    cy.login(user.email, user.password)
+    cy.login(user.email, Cypress.env('TEST_USER_PASSWORD'))
   })
   cy.wait(500)
 })
